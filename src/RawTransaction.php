@@ -1104,7 +1104,7 @@ class RawTransaction
                 $value = $v;
             }
 
-            if (!is_int($value)) {
+            if (!is_numeric($value)) {
                 throw new \InvalidArgumentException("Values should be in Satoshis [{$value}]");
             }
             if (!$scriptPubKey) {
