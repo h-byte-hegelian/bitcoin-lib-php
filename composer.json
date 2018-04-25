@@ -19,8 +19,7 @@
         "php": ">=5.3.3",
         "rych/hash_pbkdf2-compat": "~1.0",
         "ext-gmp": "*",
-        "ext-bcmath": "*",
-        "ext-mcrypt": "*"
+        "ext-bcmath": "*"
     },
     "suggest": {
         "ext-intl": "Required for BIP39 Mnemonic Seeds with UTF-8 passphrases"
