@@ -595,9 +595,9 @@ class RawTransaction
         $info = array();
         $info['txid'] = $txid;
         $info['version'] = $math->hexDec(self::_return_bytes($raw_transaction, 4, true));
-        if (!in_array($info['version'], array('0', '1'))) {
-            throw new \InvalidArgumentException("Invalid transaction version");
-        }
+        //if (!in_array($info['version'], array('0', '1'))) {
+        //    throw new \InvalidArgumentException("Invalid transaction version");
+        //}
 
         $input_count = self::_get_vint($raw_transaction);
         if (!($input_count >= 0 && $input_count <= 4294967296)) {
